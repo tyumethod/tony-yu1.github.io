@@ -41,103 +41,260 @@
 						<section id="one">
 							<div class="inner">
 								<header class="major">
-								<h1>Detailed Calculations - Trial 2</h1>
-								<h3>(1/2 cup vinegar + 1/2 teaspoon baking soda)</h3>
-								</header>
-								<h2>$$CH_{3}COOH_{(aq)} + {NaHCO_{3}}_{(s)} \rightarrow Na(CH_{3}COO)_{(aq)} + H_{2}O_{(l)} + {CO_{2}}_{(g)}$$</h2>
-								<h3>1. Calculate the volume of acetic acid used based on the 5% v/v ratio discussed on page 1.</h3>
-								<p>First, we find volume of the vinegar using the density and mass given.</p>
-								<p>$$mass_{vinegar} = density_{vinegar} \cdot volume_{vinegar}$$</p>
+								<h1>Resume</h1>
+								<h3>\documentclass[letterpaper,11pt]{article}
 
-								<p>We know that the mass of the vinegar is 106.4g. We also know that the density of the vinegar is 1.05g/mL. Thus:</p>
-								<p>$$106.4g=\frac{1.05g}{1mL} \cdot volume_{vinegar}$$</p>
-								<p>$$volume_{vingear}=106.4g \cdot \frac{1mL}{1.05g}$$</p>
-								<p>$$volume_{vingear}=106.4\cancel{g} \cdot \frac{1mL}{1.05\cancel{g}}$$</p>
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\newcommand{\latex}{\LaTeX\xspace}
+\newcommand{\tex}{\TeX\xspace}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-								<p>$$volume_{vingear}=101.33$$</p>
-								<p>Now that we have the volume of the vinegar, we can find the volume of the acetic acid with the v/v ratio provided, which is 5% v/v.</p>
-								<p>$$v/v \:	percent = \frac{volume_{acetic \:	 acid}}{volume_{vinegar}}$$</p>
-								<p>$$0.0500 = \frac{volume_{acetic \:	 acid}}{101.33mL}$$</p>
 
-								<p>$$volume_{acetic \:	 acid}=0.0500*101.33mL$$</p>
-								<p>$$volume_{acetic \:	 acid}=5.07mL$$</p>
-								<p>Therefore, the volume of the acetic acid is 5.07mL.</p>
-								<h3>2. Using the density provided, calculate the mass of acetic acid used.</h3>
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-								<p>Using the density of vinegar as a replacement for acetic acid, along with the volume of the acetic acid that was previosly obtained, to find the mass of the acetic acid:</p>
-								<p>$$density = \frac{mass_{acetic \: acid}}{volume_{acetic \: acid}}$$</p>
-								<p>$$\frac{1.05g}{1mL} = \frac{mass_{acetic \: acid}}{5.07}$$</p>
-								<p>$$mass_{acetic \: acid}=\frac{1.05g}{1mL} \cdot 5.07mL$$</p>
-								<p>$$mass_{acetic \: acid}=\frac{1.05g}{1\cancel{mL}} \cdot 5.07\cancel{mL}$$</p>
-								<p>$$mass_{acetic \: acid}=5.32g$$</p>
-								<p>Therefore, the mass of the acetic acid is 5.32 grams.</p>
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tony Yu} \\ \vspace{1pt}
+    \small 647-978-6222 $|$ \href{mailto:tony.yu@delasalle.ca}{\underline{tony.yu@delasalle.ca}} $|$ 
+    \href{https://www.linkedin.com/in/tony-yu-5839871b7/.}{\underline{linkedin.com/in/tony}} $|$  \href{purple221.github.io}{\underline{Purple221.github.io}}  $|$  \href{https://github.com/purple221}{\underline{github.com/purple221}}
+ 
+\end{center}
+%-----------EDUCATION-----------
+\section{Education \ \& Skills}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {De La Salle College "Oaklands"}{Toronto, ON}
+      {Ontario Secondary School Diploma, expected July 2022}{Sept. 2018 -- Present }
+
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, C-Sharp, Javascript, Python} \\
+     \textbf{Others}{: React, Node.js, Material-UI, Pandas, NumPY, Git, LaTeX} \\
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Sorting Algorithm Visualizer} $|$ \emph{C-Sharp}}{December, 2019}
+          \resumeItemListStart
+	    \resumeItem{A sorting algorithm visuallizer built in C-Sharp that is able to visualize different sorting algorithms.}
+            \resumeItem{The program already has multiple sorting algorithms that the user can select to visualize.}
+            \resumeItem{The user can also choose to input their own algorithms and see it visualized.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Coronavirus Tracker} $|$ \emph{Javascript, NodeJS, MongoDB}}{July, 2020}
+          \resumeItemListStart
+            \resumeItem{This is a web app that displays the newest coronavirus news based on the Worldometer API.}
+	    \resumeItem{The user is able to choose their country/worldwide, then the web app will display a map with circles in different countries that is sized according to how many cases there are, a graph of coronavirus case trends, and many other data visualizing tools.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{VideoGym} $|$ \emph{Javasript, React, Vonage API}}{March, 2020}
+          \resumeItemListStart
+            \resumeItem{A web-app that offers login, blogging, ranking, and video conference features}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Hackathons: HackTheNorth, Hack Cambridge}{Jan. 2021 -- Present}
+      {University of Cambridge, University of Waterloo.}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Self-studied using a variety of online sources (in addition to school courses) and put them into use in two dfferent hackathons}
+        \resumeItem{Worked on the front-end for HackTheNorth. Worked on the back-end for Hack Cambridge}
+        \resumeItem{One of four high school students accepted to Hack Cambridge.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Leadership: DECA Club Secretary, Link Crew Leader, House Leader}{Sept. 2019 -- Present}
+      {De La Salle College "Oaklands"}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{House Leader: submitted proposals to the principal and carried out events for the entire school}
+        \resumeItem{DECA Club Secretary: Responded to the needs of members, VPs, and the president.}
+        \resumeItem{Link Crew Leader: Chosen from a pool of more than 100 applicants to manage a group of 8 new students throughout the year}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Instructing: Private Math Tutor, STEM Club Topic Lecturer}{Sept. 2020 -- Present}
+      {De La Salle College "Oaklands"}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Taught the basics of programming in four sessions for 70+ students in STEM Club.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teams: Senior Badminton, Junior Basketball, Debate, Programming
+}{Sept. 2018 -- Present}
+      {De La Salle College "Oaklands"}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Debate Team: Competed in various tournaments and placed 3$^{rd}$ in the Ontario ProCon Provincial Debating Forum Finals.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Awards}
+ \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {AP® Scholar with Distinction Award}{June. 2019}
+      {CollegeBoard}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Given for achieving an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more exams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pascal, Cayley, CIMC Math Contest School Champion}{October 2018 -- Present}
+      {University of Waterloo}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Received threes medal for scoring the highest mark on three different Math Contests from the University of Waterloo in the school.}
+        \resumeItem{Top result: placed 174th internationally and top 0.5\ \% of 25000+ competitors. Had name published on the University of Waterloo website honour roll.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DECA Provincial Champion, ICDC Qualifier}{March 2021}
+      {DECA}{Toronto, ON}
+      \resumeItemListStart
+	\resumeItem{DECA is an international business competition for high school and university students. Around 15,000 students competed in Ontario}
+        \resumeItem{Provincial Champion in my competitive category}
+        \resumeItem{Will represent Ontario in the International DECA event (ICDC) in Anaheim, California.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}</h3>
 								
-								<h3>3. Calculate the moles acetic acid used. </h3>
-
-								<p>We can calculate the moles of acetic acid with the mass and molar mass of acetic acid.</p>
-								<p>We already have the mass of acetic acid. So we will find the molar mass of acetic acid:</p>
-								<p>$$Molar \: Mass_{CH_{3}COOH} = (12.01 \cdot 2) + (16.00 \cdot 2) + (1.01 \cdot 4)$$</p>
-								<p>$$Molar \: Mass_{CH_{3}COOH} = 60.06 \: g/mol$$</p>
-								<p>Now that we have the molar mass, we can find the number of moles:</p>
-								<p>$$n=\frac{m}{MM}$$</p>
-								<p>$$n=\frac{5.32g}{\frac{60.06g}{1mol}}$$</p>
-								<p>$$n=5.32g \cdot \frac{1mol}{60.06g}$$</p>
-								<p>$$n=5.32\cancel{g} \cdot \frac{1mol}{60.06\cancel{g}}$$</p>
-								<p>$$n=0.0886 \: mol$$</p>
-								<p>Therefore, we have used 0.0886 moles of acetic acid.</p>
-
-								<h3>4. Calculate the moles of sodium bicarbonate used.</h3>
-
-								<p>We can calculate the moles of sodium bicarbonate with the mass and molar mass of sodium bicarbonate.</p>
-								<p>We are given the mass of 1/2 teaspoon of sodium bicarbonate (2.79g), so we just need to find the molar mass of sodium bicardonate.$</p>
-								<p>$$Molar \: Mass_{NaHCO_{3}} = (22.99 \cdot 1) + (1.01 \cdot 1) + (12.01 \cdot 1) + (16.99 \cdot 3)$$</p>
-								<p>$$Molar \: Mass_{NaHCO_{3}} = 84.01 \: g/mol$$</p>
-								<p>Now that we have the molar mass, we can find the number of moles:</p>
-								<p>$$n=\frac{m}{MM}$$</p>
-								<p>$$n=\frac{2.79g}{\frac{84.01g}{1mol}}$$</p>
-								<p>$$n=2.79g \cdot \frac{1mol}{84.01g}$$</p>
-								<p>$$n=2.79\cancel{g} \cdot \frac{1mol}{84.01 \cancel{g}}$$</p>
-								<p>$$n= 0.0332 \: mol$$</p>
-								<p>Therefore, we have used 0.0332 moles of sodium bicarbonate.</p>
-
-								<h3>5. Determine the limiting reagent.</h3>
-
-
-								<p>We can determine the limiting reagent by comparing the numbers of moles of carbon dioxide produced by acetic acid and sodium bicarbonate.</p>
-								<p>Produced by acetic acid:</p>
-								<p>$$=0.0886 \: mol \: CH_{3}COOH \cdot \frac{1 \: mol \: CO_{2}}{1 \: mol \: CH_{3}COOH}$$</p>
-								<p>$$=0.0886 \: \cancel{mol \: CH_{3}COOH} \cdot \frac{1 \: mol \: CO_{2}}{1 \: \cancel{mol \: CH_{3}COOH}}$$</p>
-								<p>$$=0.0886 \: mol \: CO_{2}$$</p>
-								<p>Produced by sodium bicarbonate:</p>
-								<p>$$=0.0332 \: mol \: NaHCO_{3} \cdot \frac{1 \: mol \: CO_{2}}{1 \: mol \: NaHCO_{3}}$$</p>
-								<p>$$=0.0332 \: \cancel{mol \: NaHCO_{3}} \cdot \frac{1 \: mol \: CO_{2}}{1 \: \cancel{mol \: NaHCO_{3}}}$$</p>
-								<p>$$=0.0332 \: mol \: CO_{2}$$</p>
-								
-								<p>Since the amount of moles of carbon dioxide produced by sodium bicarbonate is less, sodium bicarbonate is the limiting reagent in this reaction.</p>
-								
-								<h3>6.Calculate the expected amount of CO2 produced for your reaction.</h3>
-								<p>From question 5, we know that about 0.0332 moles of carbon dioxide will be produced.</p>								
-								<p>We can also find the mass of the carbon dioxide that will be produced.</p>
-								<p>To begin by finding the molar mass of carbon dioxide:</p>
-								<p>$$Molar \: Mass_{CO_{2}} = (12.01 \cdot 1) + (16.00 \cdot 2)$$</p>
-								<p>$$Molar \: Mass_{CO_{2}} = 44.01 \: g/mol$$</p>
-								<p>Now we can find the mass of the carbon dioxide produced:</p>
-								<p>$$n=\frac{m}{MM}$$</p>
-								<p>$$0.0332 \: mol=\frac{mass_{CO_{2}}}{\frac{44.01g}{1mol}}$$</p>
-								<p>$$0.0332 \: mol=mass_{CO_{2}} \cdot \frac{1mol}{44.01g}$$</p>
-								<p>$$mass_{CO_{2}}= 0.0332 \: \cancel{mol} \cdot \frac{44.01g}{1 \cancel{mol}}$$</p>
-
-								<p>$$mass_{CO_{2}}=1.46 \: g$$</p>
-								<p>Therefore, about 1.46 grams or 0.0332 moles of carbon dioxide is produced.</p>
-
-								
-								
-								
-
-
-
-
-
 							</div>
 						</section>
 
